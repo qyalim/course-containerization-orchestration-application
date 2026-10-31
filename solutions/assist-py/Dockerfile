@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 
 COPY app/ ./app/
 
-EXPOSE 5436
+EXPOSE 8006
 
 #Запуск
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5436"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8006"]
